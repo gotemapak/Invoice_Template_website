@@ -1,4 +1,26 @@
+# All crawlers, including AI search and AI training crawlers, are welcome.
 User-agent: *
+Allow: /
+
+# AI search / answer-engine crawlers (citation in ChatGPT Search, Claude, Perplexity)
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+Allow: /
+
+# AI training / grounding crawlers
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+User-agent: Bytespider
+User-agent: cohere-ai
+User-agent: Meta-ExternalAgent
 Allow: /
 
 Sitemap: https://invoice-templates-now.com/sitemap.xml
