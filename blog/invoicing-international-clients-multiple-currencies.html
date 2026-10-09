@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How to Invoice International Clients in Multiple Currencies</title>
+  <meta name="description" content="A practical guide to invoicing clients in different countries: choosing the right currency per invoice, why offline and on-device data storage matters across jurisdictions, and how a 100+ currency invoice generator handles it." />
+  <link rel="canonical" href="https://invoice-templates-now.com/blog/invoicing-international-clients-multiple-currencies.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://invoice-templates-now.com/blog/invoicing-international-clients-multiple-currencies.html" />
+  <meta property="og:title" content="How to Invoice International Clients in Multiple Currencies" />
+  <meta property="og:description" content="A practical guide to invoicing clients in different countries: choosing the right currency per invoice, why offline and on-device data storage matters across jurisdictions, and how a 100+ currency invoice generator handles it." />
+  <meta property="og:image" content="https://invoice-templates-now.com/Landing_Screen_1.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How to Invoice International Clients in Multiple Currencies" />
+  <meta name="twitter:description" content="A practical guide to invoicing clients in different countries: choosing the right currency per invoice, why offline and on-device data storage matters across jurisdictions, and how a 100+ currency invoice generator handles it." />
+  <meta name="twitter:image" content="https://invoice-templates-now.com/Landing_Screen_1.png" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Invoice International Clients in Multiple Currencies",
+    "description": "A practical guide to invoicing international clients: choosing a currency per invoice, how an offline, on-device invoice generator with 100+ currencies handles multi-currency billing, and what it does not do (automatic exchange-rate conversion).",
+    "author": { "@type": "Organization", "name": "Invoice Template" },
+    "publisher": { "@type": "Organization", "name": "Invoice Template", "url": "https://invoice-templates-now.com/" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://invoice-templates-now.com/blog/invoicing-international-clients-multiple-currencies.html" },
+    "url": "https://invoice-templates-now.com/blog/invoicing-international-clients-multiple-currencies.html",
+    "datePublished": "2026-10-09",
+    "dateModified": "2026-10-09"
+  }
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5SCC5B6W');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Umami tracking -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="3336e8e1-6086-4ff0-8569-bbe15fb8da19"></script>
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand:#0A1625;
+      --body:#0b1623;
+      --card-bg:#0f1d2e;
+      --card-bg-2:#0c1a29;
+      --card-border:#12263c;
+      --text-hero:#e6edf3;
+      --text-muted:#cfe0ef;
+      --muted:#9fb3c8;
+      --radius:18px;
+      --shadow:0 24px 60px rgba(0,0,0,.35), 0 3px 10px rgba(0,0,0,.25);
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--body);
+      color:#dbe7f3;
+    }
+
+    .wrap{
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .hero{
+      text-align: center;
+      padding: 60px 0 80px;
+    }
+
+    .hero h1{
+      font-size: clamp(32px, 5vw, 52px);
+      line-height:1.15; letter-spacing:-.02em;
+      margin:0 0 20px; font-weight: 800; color:#fff;
+      text-wrap: balance;
+    }
+
+    .hero p{
+      font-size: clamp(18px, 2.5vw, 22px);
+      color: var(--text-hero);
+      margin: 0 0 40px;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-button{
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      color: white;
+      text-decoration: none;
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 18px;
+      box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+      transition: all 0.2s ease;
+    }
+
+    .cta-button:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 12px 35px rgba(59, 130, 246, 0.4);
+    }
+
+    .features{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin: 80px 0;
+    }
+
+    .feature-card{
+      background: linear-gradient(180deg, var(--card-bg), var(--card-bg-2));
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 32px;
+      text-align: center;
+    }
+
+    .feature-icon{
+      width: 64px;
+      height: 64px;
+      background: #0f2a44;
+      border: 1px solid #12314e;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      color: #7ceba3;
+      font-size: 24px;
+    }
+
+    .feature-card h3{
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 0 12px;
+      color: #fff;
+    }
+
+    .feature-card p{
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .nav{
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .nav a{
+      color: var(--text-muted);
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .nav a:hover{
+      color: #fff;
+    }
+
+    .article{
+      max-width: 760px;
+      margin: 0 auto 60px;
+    }
+
+    .article p{
+      color: var(--text-muted);
+      line-height: 1.75;
+      font-size: 17px;
+    }
+
+    .article h2{
+      color: #fff;
+      font-size: clamp(22px, 3vw, 28px);
+      margin: 48px 0 16px;
+      text-align: left;
+    }
+
+    .article h3{
+      color: #fff;
+      font-size: 19px;
+      margin: 28px 0 10px;
+    }
+
+    .article ul, .article ol{
+      color: var(--text-muted);
+      line-height: 1.8;
+      font-size: 17px;
+      padding-left: 22px;
+    }
+
+    .article li{ margin-bottom: 8px; }
+
+    .article a{ color: #7ceba3; }
+
+    .callout{
+      background: linear-gradient(180deg, var(--card-bg), var(--card-bg-2));
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+
+    .callout p{ margin: 0; }
+
+    .byline{
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+      margin: 0 0 48px;
+    }
+
+    footer{
+      color: var(--muted);
+      text-align:center;
+      font-size: 13px;
+      padding: 40px 16px;
+      border-top: 1px solid var(--card-border);
+      margin-top: 80px;
+    }
+
+    footer a{
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SCC5B6W"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <main class="wrap">
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+      <a href="/invoice-generator-vs-spreadsheet.html">Vs. Spreadsheet</a>
+      <a href="/privacy-by-design.html">Privacy by Design</a>
+      <a href="/faq.html">FAQ</a>
+    </nav>
+
+    <section class="hero">
+      <h1>How to Invoice International Clients in Multiple Currencies</h1>
+      <p>Billing clients in different countries means picking the right currency, every time, without turning each invoice into a formatting project. Here's a practical workflow, plus what actually happens to your data when you bill across borders.</p>
+      <a href="https://chromewebstore.google.com/detail/invoice-template/jiephbmepjaibnflchgedmkhefidahhj" class="cta-button" target="_blank">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+        Install from Chrome Web Store
+      </a>
+    </section>
+
+    <article class="article">
+      <p class="byline">Published October 9, 2026</p>
+
+      <p>If you bill clients outside your home country — as a freelance designer, developer, consultant, or small agency — currency isn't a side detail on an invoice. It's one of the first things a client checks, and getting it wrong (the wrong symbol, an unclear code, a format they don't recognize) is a small but real source of friction and payment delay. This guide walks through a practical workflow for invoicing international clients in the currency they actually expect, and explains why keeping that process offline and on-device matters once you're dealing with clients across different countries and accounting systems.</p>
+
+      <h2>Why currency choice matters more than it seems</h2>
+      <p>A client in London expects GBP. A client in Manila expects PHP, or sometimes USD if that's how your contract was negotiated. A client in Tokyo expects JPY, formatted without decimal places the way yen typically is. None of this is exotic — it's just the baseline expectation of someone receiving a bill in their own country. Sending a US-freelancer-style invoice with a bare dollar sign to a client who bills and reports in euros creates ambiguity: is that USD or a local dollar-denominated currency like AUD or CAD? Ambiguity on an invoice is exactly the kind of thing that gets a payment held up while someone in accounts payable asks a clarifying question.</p>
+
+      <p>The fix isn't complicated: pick the currency the client actually invoices and pays in, label it clearly with its currency code (not just a symbol), and keep that consistent across every invoice you send that client. The harder part is doing that for ten or twenty clients across different countries without rebuilding your invoice format for each one.</p>
+
+      <h2>A practical workflow for multi-currency invoicing</h2>
+      <ol>
+        <li><strong>Confirm the billing currency when you onboard the client</strong>, not when the first invoice is due. Ask directly: "What currency should invoices be issued in?" Many clients have a standard answer tied to their own accounting setup.</li>
+        <li><strong>Set that currency once per client record</strong>, rather than re-selecting it on every invoice. If your tool lets you save a default currency per client, use it — it removes a step you'd otherwise repeat every billing cycle.</li>
+        <li><strong>Use the currency code, not just the symbol</strong>, somewhere on the invoice. "$" is ambiguous across USD, CAD, AUD, SGD, MXN, and others. "USD $1,200.00" is not.</li>
+        <li><strong>Keep line-item amounts in that one currency</strong> for the whole invoice. Mixing currencies on a single invoice (e.g., listing some line items in USD and others in EUR) is a common source of confusion and should be avoided — issue separate invoices per currency if a client is somehow billed in more than one.</li>
+        <li><strong>Export to PDF before sending</strong>, so the formatting — currency symbol, decimal places, alignment — is locked in and won't shift depending on what software the client opens it with.</li>
+      </ol>
+
+      <h2>What "100+ currencies" actually means in practice</h2>
+      <p>Invoice Template includes a built-in list of more than 100 currencies — 138 at last count, covering major and regional currencies from USD, EUR, and GBP to JPY, INR, PHP, IDR, VND, AED, and dozens more. Picking a currency for an invoice sets the currency code and symbol used throughout that invoice and updates the formatting accordingly, and you can save a different default currency per client so you're not re-selecting it each time you bill the same person.</p>
+
+      <div class="callout">
+        <p><strong>What it doesn't do:</strong> Invoice Template does not perform automatic currency conversion or pull live exchange rates. It lets you issue an invoice in the currency you choose and displays amounts correctly formatted in that currency — it does not convert an amount from one currency to another for you. If you're quoting a client in EUR but need to know what that equals in your own home currency, that's a separate step you'd handle with a currency converter or your accounting software, not something built into the invoice itself. We'd rather say that plainly than imply a conversion feature that isn't there.</p>
+      </div>
+
+      <h2>Why offline, on-device billing matters across jurisdictions</h2>
+      <p>Once you're invoicing clients in multiple countries, you're also implicitly handling data that touches multiple accounting and privacy jurisdictions — a UK client's billing address, an EU client's company registration details, a client in a country with its own data-residency expectations. Many cloud-based invoicing tools store that information in a database hosted in one specific country, under that provider's terms, regardless of where your client is. That's an extra variable you don't need.</p>
+
+      <p>Invoice Template avoids that variable entirely by not sending invoice or client data anywhere. It runs as a Chrome extension and saves everything — client records, invoice history, status — using the browser's local storage (<code>chrome.storage.local</code>) directly on your device. There's no server-side database, no account, and no sync step where a client's billing details cross the network. That's true no matter which country the client is in or which currency you're billing them in, which removes one layer of jurisdictional uncertainty when you're dealing with clients spread across the US, UK, Canada, Australia, or anywhere else. For the fuller explanation of what that means and why it's structured this way, see <a href="/privacy-by-design.html">Privacy by Design</a>.</p>
+
+      <p>It also means the currency and client-selection workflow above works the same whether you're at a desk with a fast connection or finishing an invoice on a flight before a client's payment terms run out — because none of it depends on a live connection. See the <a href="/faq.html">FAQ</a> for the full rundown of what works offline and what's stored where.</p>
+
+      <h2>A simple example</h2>
+      <p>Say you're a freelance developer with three clients: one in New York (USD), one in Berlin (EUR), and one in Manila (PHP, historically invoiced in USD by agreement). In practice, that means three client records, each with its own saved default currency, each invoice automatically formatted and labeled correctly without you touching a currency setting mid-invoice, and three separate invoice histories you can track by status — all stored locally, all exportable to PDF the same way regardless of which currency is on the page. That's the whole workflow: set the currency once per client, let the invoice tool carry it forward, and keep the underlying data where only you can see it.</p>
+
+      <h2>Related reading</h2>
+      <ul>
+        <li><a href="/invoice-generator-vs-spreadsheet.html">Invoice Generator vs. Spreadsheet Invoicing</a> — why manual currency formatting in spreadsheets breaks down at scale.</li>
+        <li><a href="/privacy-by-design.html">Privacy by Design</a> — the full picture of how client and invoice data stays on-device.</li>
+        <li><a href="/faq.html">FAQ</a> — quick answers on offline access, currencies, and storage.</li>
+      </ul>
+    </article>
+  </main>
+
+  <footer>© 2025 Invoice Template - Professional Invoice Management · <a href="/">Home</a> · <a href="/blog/">Blog</a></footer>
+</body>
+</html>
