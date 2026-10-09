@@ -1,11 +1,10 @@
 # Invoice Template
 
-> Invoice Template is a free Chrome extension for creating professional invoices. No registration required, works offline, and exports invoices to PDF.
+> Invoice Template is a Chrome extension for creating professional invoices. No registration required, works offline, and exports invoices to PDF.
 
 Key facts (from https://invoice-templates-now.com/):
 
 - Platform: Google Chrome extension
-- Price: free
 - Works completely offline; data stays on the user's device (no cloud storage, no registration)
 - Customizable invoice templates with business branding
 - Client management: store client information, track invoice status, maintain payment records
@@ -17,3 +16,6 @@ Key facts (from https://invoice-templates-now.com/):
 - [Homepage](https://invoice-templates-now.com/): Overview of features
 - [Install from Chrome Web Store](https://chromewebstore.google.com/detail/invoice-template/jiephbmepjaibnflchgedmkhefidahhj): Official listing and install page
 - [Installation guide](https://invoice-templates-now.com/install.html): How to pin the extension to the Chrome toolbar after installing
+- [FAQ](https://invoice-templates-now.com/faq.html): Common questions about offline use, data storage, currencies, and PDF export
+- [Privacy by Design](https://invoice-templates-now.com/privacy-by-design.html): How Invoice Template keeps data on-device with no cloud storage
+- [Invoice Generator vs. Spreadsheet](https://invoice-templates-now.com/invoice-generator-vs-spreadsheet.html): Comparison of using the extension versus spreadsheet invoicing
