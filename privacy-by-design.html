@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy by Design: How Invoice Template Protects Your Client Data</title>
+  <meta name="description" content="Why Invoice Template stores invoices and client records on-device instead of the cloud: no account, no server, no sync risk, and no internet connection required to create or export invoices." />
+  <link rel="canonical" href="https://invoice-templates-now.com/privacy-by-design.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://invoice-templates-now.com/privacy-by-design.html" />
+  <meta property="og:title" content="Privacy by Design: How Invoice Template Protects Your Client Data" />
+  <meta property="og:description" content="Why Invoice Template stores invoices and client records on-device instead of the cloud: no account, no server, no sync risk, and no internet connection required to create or export invoices." />
+  <meta property="og:image" content="https://invoice-templates-now.com/Landing_Screen_1.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Privacy by Design: How Invoice Template Protects Your Client Data" />
+  <meta name="twitter:description" content="Why Invoice Template stores invoices and client records on-device instead of the cloud: no account, no server, no sync risk, and no internet connection required to create or export invoices." />
+  <meta name="twitter:image" content="https://invoice-templates-now.com/Landing_Screen_1.png" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Privacy by Design: How Invoice Template Protects Your Client Data",
+    "description": "An explanation of why Invoice Template stores invoices and client records on-device rather than in the cloud, covering account requirements, offline access, and what data the extension does and does not transmit.",
+    "author": {
+      "@type": "Organization",
+      "name": "Invoice Template"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Invoice Template",
+      "url": "https://invoice-templates-now.com/"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://invoice-templates-now.com/privacy-by-design.html"
+    },
+    "url": "https://invoice-templates-now.com/privacy-by-design.html",
+    "datePublished": "2026-10-09",
+    "dateModified": "2026-10-09"
+  }
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5SCC5B6W');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Umami tracking -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="3336e8e1-6086-4ff0-8569-bbe15fb8da19"></script>
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand:#0A1625;
+      --body:#0b1623;
+      --card-bg:#0f1d2e;
+      --card-bg-2:#0c1a29;
+      --card-border:#12263c;
+      --text-hero:#e6edf3;
+      --text-muted:#cfe0ef;
+      --muted:#9fb3c8;
+      --radius:18px;
+      --shadow:0 24px 60px rgba(0,0,0,.35), 0 3px 10px rgba(0,0,0,.25);
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--body);
+      color:#dbe7f3;
+    }
+
+    .wrap{
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .hero{
+      text-align: center;
+      padding: 60px 0 80px;
+    }
+
+    .hero h1{
+      font-size: clamp(32px, 5vw, 52px);
+      line-height:1.15; letter-spacing:-.02em;
+      margin:0 0 20px; font-weight: 800; color:#fff;
+      text-wrap: balance;
+    }
+
+    .hero p{
+      font-size: clamp(18px, 2.5vw, 22px);
+      color: var(--text-hero);
+      margin: 0 0 40px;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-button{
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      color: white;
+      text-decoration: none;
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 18px;
+      box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+      transition: all 0.2s ease;
+    }
+
+    .cta-button:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 12px 35px rgba(59, 130, 246, 0.4);
+    }
+
+    .features{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin: 80px 0;
+    }
+
+    .feature-card{
+      background: linear-gradient(180deg, var(--card-bg), var(--card-bg-2));
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 32px;
+      text-align: center;
+    }
+
+    .feature-icon{
+      width: 64px;
+      height: 64px;
+      background: #0f2a44;
+      border: 1px solid #12314e;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      color: #7ceba3;
+      font-size: 24px;
+    }
+
+    .feature-card h3{
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 0 12px;
+      color: #fff;
+    }
+
+    .feature-card p{
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .nav{
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .nav a{
+      color: var(--text-muted);
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .nav a:hover{
+      color: #fff;
+    }
+
+    .intro p, .faq p, .comparison-intro p{
+      color: var(--text-muted);
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .comparison-table-wrap{
+      overflow-x: auto;
+      margin: 40px 0 80px;
+      border-radius: var(--radius);
+      border: 1px solid var(--card-border);
+    }
+
+    table.comparison-table{
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 640px;
+      background: linear-gradient(180deg, var(--card-bg), var(--card-bg-2));
+    }
+
+    table.comparison-table th,
+    table.comparison-table td{
+      padding: 18px 20px;
+      text-align: left;
+      border-bottom: 1px solid var(--card-border);
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    table.comparison-table th{
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      background: #0c1a29;
+    }
+
+    table.comparison-table tr:last-child td{
+      border-bottom: none;
+    }
+
+    table.comparison-table td:first-child{
+      color: #fff;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .check{ color:#7ceba3; }
+    .cross{ color:#9fb3c8; }
+
+    section h2{
+      color: #fff;
+      font-size: clamp(24px, 3vw, 32px);
+      text-align: center;
+      margin: 0 0 16px;
+    }
+
+    .comparison-intro{
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .use-cases{
+      margin: 60px 0;
+    }
+
+    .use-cases .feature-card{
+      text-align: left;
+    }
+
+    .use-cases .feature-card h3{
+      text-align: left;
+    }
+
+    .faq{
+      max-width: 820px;
+      margin: 0 auto 80px;
+    }
+
+    .faq h3{
+      color: #fff;
+      font-size: 19px;
+      margin: 32px 0 8px;
+    }
+
+    .faq a{ color: #7ceba3; }
+
+    footer{
+      color: var(--muted);
+      text-align:center;
+      font-size: 13px;
+      padding: 40px 16px;
+      border-top: 1px solid var(--card-border);
+      margin-top: 80px;
+    }
+
+    footer a{
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SCC5B6W"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <main class="wrap">
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/install.html">Install</a>
+      <a href="/invoice-generator-vs-spreadsheet.html">Vs. Spreadsheet</a>
+      <a href="/faq.html">FAQ</a>
+    </nav>
+
+    <section class="hero">
+      <h1>Privacy by Design: Your Invoice Data Stays on Your Device</h1>
+      <p>Invoices contain client names, contact details, line items, and payment amounts — the kind of information you don't want sitting on someone else's server. Here's exactly how Invoice Template handles it, and why that's different from most invoicing tools.</p>
+      <a href="https://chromewebstore.google.com/detail/invoice-template/jiephbmepjaibnflchgedmkhefidahhj" class="cta-button" target="_blank">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+        Install from Chrome Web Store
+      </a>
+    </section>
+
+    <section class="comparison-intro">
+      <h2>Why this matters for invoicing specifically</h2>
+      <p>An invoice is a financial document. It usually includes a client's name, business or home address, email, and exactly what they're being charged and for what. Many invoicing tools store that in a cloud database tied to an account, which means a breach, a policy change, or a provider shutdown can expose it. Invoice Template is built as a Chrome extension that keeps that data on your own machine instead — there's no account to create, no server-side database, and no sync step where client records travel over the network.</p>
+    </section>
+
+    <div class="comparison-table-wrap">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>What happens to your data</th>
+            <th>Typical cloud-based invoicing tool</th>
+            <th>Invoice Template (Chrome extension)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Where invoices are saved</td>
+            <td>Uploaded to the provider's servers, tied to your account.</td>
+            <td><span class="check">✓</span> Saved locally on your device using the browser's built-in storage. Nothing is uploaded.</td>
+          </tr>
+          <tr>
+            <td>Client records</td>
+            <td>Stored in the provider's cloud database alongside other customers' data.</td>
+            <td><span class="check">✓</span> Stored on-device only. No shared server, no third-party database.</td>
+          </tr>
+          <tr>
+            <td>Account required</td>
+            <td>Usually yes — email, password, and often billing details just to start.</td>
+            <td><span class="check">✓</span> No account, no login, no password to manage or lose.</td>
+          </tr>
+          <tr>
+            <td>Exposure if the provider is breached</td>
+            <td>Your invoice and client data could be exposed along with everyone else's, since it lives on their servers.</td>
+            <td><span class="check">✓</span> Nothing to breach on a server, because nothing is sent to one.</td>
+          </tr>
+          <tr>
+            <td>Works without an internet connection</td>
+            <td>Usually no — most cloud tools need a live connection to load or save your data.</td>
+            <td><span class="check">✓</span> Works completely offline. Create and export invoices with no connection at all.</td>
+          </tr>
+          <tr>
+            <td>What you need to set up</td>
+            <td>Account creation, email verification, often a subscription plan.</td>
+            <td><span class="check">✓</span> Install from the Chrome Web Store and start — free, no sign-up.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <section class="use-cases">
+      <h2>Where this makes the biggest difference</h2>
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-icon">💼</div>
+          <h3>Freelancers billing international clients</h3>
+          <p>Invoices sent abroad often carry a client's full name, address, and payment terms. Keeping that on your own device — rather than a third-party invoicing platform's servers — means one less place that data can be exposed, across any of the 100+ currencies you bill in.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🧳</div>
+          <h3>Consultants working from shared or public networks</h3>
+          <p>Filling out a client invoice on hotel wifi or a coworking network is a reasonable moment to not want that data transmitted anywhere. Because Invoice Template works offline and never uploads your data, the network you're on doesn't matter.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🗂️</div>
+          <h3>Agencies holding multiple clients' financial details</h3>
+          <p>An agency's client list is itself sensitive — it shows who you work with and what you charge them. Built-in client management keeps those records on the device you control, instead of in a shared cloud account other tools require.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Privacy questions, answered directly</h2>
+
+      <h3>Does Invoice Template send my invoice or client data anywhere?</h3>
+      <p>No. The extension does not upload invoice or client data to any server. It's saved using the browser's local storage, on your device.</p>
+
+      <h3>Do I need an account to use it?</h3>
+      <p>No. There's no sign-up, no password, and no account of any kind. Install the extension and start creating invoices.</p>
+
+      <h3>What happens to my data if I lose internet access?</h3>
+      <p>Nothing changes — Invoice Template works completely offline, since it was never depending on a connection to save or load your data in the first place.</p>
+
+      <h3>Is this the same as a "local-first" app?</h3>
+      <p>Functionally, yes: your invoices and client records are created, saved, and exported entirely on your device, with no cloud database involved.</p>
+
+      <h3>How does this compare to spreadsheet invoicing?</h3>
+      <p>A local spreadsheet file also keeps data on-device, but requires manual formatting and PDF cleanup each time. See the full <a href="/invoice-generator-vs-spreadsheet.html">invoice generator vs. spreadsheet comparison</a> for the full picture.</p>
+    </section>
+  </main>
+
+  <footer>© 2025 Invoice Template - Professional Invoice Management · <a href="/">Home</a></footer>
+</body>
+</html>
