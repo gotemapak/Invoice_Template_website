@@ -9,7 +9,7 @@
   <link rel="canonical" href="https://invoice-templates-now.com/install.html" />
   <!-- Updated screenshots -->
 
-  <!-- Umami tracking removed -->
+  <!-- Umami tracking -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="cbf2f890-7747-4fc9-b581-79adfbaeee85"></script>
   
   <!-- Favicons -->
@@ -113,7 +113,7 @@
 
     .nav{
       text-align: center;
-      margin: 20px 0;
+      margin: 20px 0 0;
     }
 
     .nav a{
@@ -139,6 +139,11 @@
 <body>
 
   <main class="wrap">
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/install.html">Install</a>
+    </nav>
+
     <section class="panel" aria-label="Installation guide">
       <div class="panel__header">
         <h1>Thank you for installing Invoice Template!</h1>
@@ -147,12 +152,18 @@
 
       <div class="panel__section">
         <p class="panel__caption">Step 1: Click the Extensions icon (puzzle piece) in your Chrome toolbar</p>
-        <img class="panel__media" src="Landing_Screen_1.png" alt="Step 1 — Click the Extensions icon in Chrome toolbar" />
+        <picture>
+          <source srcset="Landing_Screen_1.webp" type="image/webp" />
+          <img class="panel__media" src="Landing_Screen_1.png" alt="Step 1 — Click the Extensions icon in Chrome toolbar" />
+        </picture>
       </div>
 
       <div class="panel__section">
         <p class="panel__caption">Step 2: Find 'Invoice Template' in the extensions list and click the pin icon to pin it to your toolbar</p>
-        <img class="panel__media" src="Landing_Screen_2.png" alt="Step 2 — Pin Invoice Template extension to toolbar" />
+        <picture>
+          <source srcset="Landing_Screen_2.webp" type="image/webp" />
+          <img class="panel__media" src="Landing_Screen_2.png" alt="Step 2 — Pin Invoice Template extension to toolbar" />
+        </picture>
       </div>
     </section>
   </main>
