@@ -68,54 +68,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="/shared/base.css" />
   <style>
-    :root{
-      --brand:#0A1625;
-      --body:#0b1623;
-      --card-bg:#0f1d2e;
-      --card-bg-2:#0c1a29;
-      --card-border:#12263c;
-      --text-hero:#e6edf3;
-      --text-muted:#cfe0ef;
-      --muted:#9fb3c8;
-      --radius:18px;
-      --shadow:0 24px 60px rgba(0,0,0,.35), 0 3px 10px rgba(0,0,0,.25);
-    }
-
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: var(--body);
-      color:#dbe7f3;
-    }
-
-    .wrap{
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    .hero{
-      text-align: center;
-      padding: 60px 0 80px;
+    @media (min-width: 769px) {
+      .hero{
+        padding: 60px 0 80px;
+      }
     }
 
     .hero h1{
       font-size: clamp(32px, 5vw, 52px);
-      line-height:1.15; letter-spacing:-.02em;
-      margin:0 0 20px; font-weight: 800; color:#fff;
+      line-height:1.15;
+      color:#fff;
       text-wrap: balance;
     }
 
     .hero p{
       font-size: clamp(18px, 2.5vw, 22px);
-      color: var(--text-hero);
-      margin: 0 0 40px;
       max-width: 680px;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     .cta-button{
@@ -138,19 +108,19 @@
       box-shadow: 0 12px 35px rgba(59, 130, 246, 0.4);
     }
 
+    @media (min-width: 769px) {
+      .features{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+    }
+
     .features{
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 24px;
       margin: 80px 0;
     }
 
     .feature-card{
-      background: linear-gradient(180deg, var(--card-bg), var(--card-bg-2));
-      border: 1px solid var(--card-border);
-      border-radius: var(--radius);
       padding: 32px;
-      text-align: center;
     }
 
     .feature-icon{
@@ -159,42 +129,17 @@
       background: #0f2a44;
       border: 1px solid #12314e;
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 20px;
       color: #7ceba3;
       font-size: 24px;
     }
 
-    .feature-card h3{
-      font-size: 20px;
-      font-weight: 700;
-      margin: 0 0 12px;
-      color: #fff;
-    }
-
-    .feature-card p{
-      color: var(--text-muted);
-      line-height: 1.6;
-      margin: 0;
-    }
-
     .nav{
-      text-align: center;
+      justify-content: center;
       margin: 40px 0;
     }
 
     .nav a{
-      color: var(--text-muted);
-      text-decoration: none;
       margin: 0 20px;
-      font-weight: 500;
-      transition: color 0.2s ease;
-    }
-
-    .nav a:hover{
-      color: #fff;
     }
 
     .intro p, .faq p, .comparison-intro p{
@@ -203,46 +148,8 @@
       font-size: 17px;
     }
 
-    .comparison-table-wrap{
-      overflow-x: auto;
-      margin: 40px 0 80px;
-      border-radius: var(--radius);
-      border: 1px solid var(--card-border);
-    }
-
     table.comparison-table{
-      width: 100%;
-      border-collapse: collapse;
       min-width: 640px;
-      background: linear-gradient(180deg, var(--card-bg), var(--card-bg-2));
-    }
-
-    table.comparison-table th,
-    table.comparison-table td{
-      padding: 18px 20px;
-      text-align: left;
-      border-bottom: 1px solid var(--card-border);
-      color: var(--text-muted);
-      line-height: 1.5;
-    }
-
-    table.comparison-table th{
-      color: #fff;
-      font-weight: 700;
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: .04em;
-      background: #0c1a29;
-    }
-
-    table.comparison-table tr:last-child td{
-      border-bottom: none;
-    }
-
-    table.comparison-table td:first-child{
-      color: #fff;
-      font-weight: 600;
-      white-space: nowrap;
     }
 
     .check{ color:#7ceba3; }
@@ -297,6 +204,7 @@
     <nav class="nav">
       <a href="/">Home</a>
       <a href="/install.html">Install</a>
+      <a href="/invoice-template-vs-aliexpress-invoice-tools.html">Vs. AliExpress Tools</a>
       <a href="/privacy-by-design.html">Privacy by Design</a>
       <a href="/faq.html">FAQ</a>
       <a href="/blog/">Blog</a>
@@ -330,48 +238,48 @@
         <tbody>
           <tr>
             <td>Getting started</td>
-            <td>Copy a previous sheet or build a layout from scratch; manage formulas and cell formatting yourself.</td>
-            <td><span class="check">✓</span> Ready-to-use invoice template — open the extension and start filling in details.</td>
+            <td data-label="Spreadsheet invoicing">Copy a previous sheet or build a layout from scratch; manage formulas and cell formatting yourself.</td>
+            <td data-label="Invoice Template (Chrome extension)"><span class="check">✓</span> Ready-to-use invoice template — open the extension and start filling in details.</td>
           </tr>
           <tr>
             <td>Speed per invoice</td>
-            <td>Re-typing or copy-pasting client and line-item data into the same recurring layout each time.</td>
-            <td><span class="check">✓</span> Create an invoice in seconds with an interface built specifically for the task.</td>
+            <td data-label="Spreadsheet invoicing">Re-typing or copy-pasting client and line-item data into the same recurring layout each time.</td>
+            <td data-label="Invoice Template (Chrome extension)"><span class="check">✓</span> Create an invoice in seconds with an interface built specifically for the task.</td>
           </tr>
           <tr>
             <td>PDF export</td>
-            <td>Export or print to PDF manually, often with layout and page-break issues to fix.</td>
-            <td><span class="check">✓</span> One-click export to a clean, shareable PDF file.</td>
+            <td data-label="Spreadsheet invoicing">Export or print to PDF manually, often with layout and page-break issues to fix.</td>
+            <td data-label="Invoice Template (Chrome extension)"><span class="check">✓</span> One-click export to a clean, shareable PDF file.</td>
           </tr>
           <tr>
             <td>Currency handling</td>
-            <td>Manually set number formats and symbols per currency, per sheet.</td>
-            <td><span class="check">✓</span> 100+ currencies built in — pick one from the list.</td>
+            <td data-label="Spreadsheet invoicing">Manually set number formats and symbols per currency, per sheet.</td>
+            <td data-label="Invoice Template (Chrome extension)"><span class="check">✓</span> 100+ currencies built in — pick one from the list.</td>
           </tr>
           <tr>
             <td>Client records</td>
-            <td>No built-in concept of a "client" — track names, status, and history yourself across sheets or tabs.</td>
-            <td><span class="check">✓</span> Store client information, track invoice status, and maintain payment records.</td>
+            <td data-label="Spreadsheet invoicing">No built-in concept of a "client" — track names, status, and history yourself across sheets or tabs.</td>
+            <td data-label="Invoice Template (Chrome extension)"><span class="check">✓</span> Store client information, track invoice status, and maintain payment records.</td>
           </tr>
           <tr>
             <td>Offline access</td>
-            <td>Depends on the spreadsheet app and file storage (local or cloud-synced).</td>
-            <td><span class="check">✓</span> Works completely offline — no internet connection required.</td>
+            <td data-label="Spreadsheet invoicing">Depends on the spreadsheet app and file storage (local or cloud-synced).</td>
+            <td data-label="Invoice Template (Chrome extension)"><span class="check">✓</span> Works completely offline — no internet connection required.</td>
           </tr>
           <tr>
             <td>Where your data lives</td>
-            <td>Varies by provider; cloud-based spreadsheet tools typically sync sheets to their servers.</td>
-            <td><span class="check">✓</span> Stays on your device. No cloud storage, nothing uploaded.</td>
+            <td data-label="Spreadsheet invoicing">Varies by provider; cloud-based spreadsheet tools typically sync sheets to their servers.</td>
+            <td data-label="Invoice Template (Chrome extension)"><span class="check">✓</span> Stays on your device. No cloud storage, nothing uploaded.</td>
           </tr>
           <tr>
             <td>Account required</td>
-            <td>Depends on the spreadsheet software used.</td>
-            <td><span class="check">✓</span> No registration — install and use immediately.</td>
+            <td data-label="Spreadsheet invoicing">Depends on the spreadsheet software used.</td>
+            <td data-label="Invoice Template (Chrome extension)"><span class="check">✓</span> No registration — install and use immediately.</td>
           </tr>
           <tr>
             <td>Cost</td>
-            <td>Free if you already have spreadsheet software.</td>
-            <td><span class="check">✓</span> See Chrome Web Store for pricing.</td>
+            <td data-label="Spreadsheet invoicing">Free if you already have spreadsheet software.</td>
+            <td data-label="Invoice Template (Chrome extension)"><span class="check">✓</span> See Chrome Web Store for pricing.</td>
           </tr>
         </tbody>
       </table>

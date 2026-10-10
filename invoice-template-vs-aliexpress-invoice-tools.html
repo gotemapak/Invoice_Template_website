@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Invoice Template vs. AliExpress/Amazon Invoice Extensions</title>
+  <meta name="description" content="How a general-purpose invoice generator compares to marketplace-only invoice extensions built for AliExpress or Amazon order pages: any client vs. one marketplace, 138 currencies, and no account." />
+  <link rel="canonical" href="https://invoice-templates-now.com/invoice-template-vs-aliexpress-invoice-tools.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://invoice-templates-now.com/invoice-template-vs-aliexpress-invoice-tools.html" />
+  <meta property="og:title" content="Invoice Template vs. AliExpress/Amazon Invoice Extensions" />
+  <meta property="og:description" content="How a general-purpose invoice generator compares to marketplace-only invoice extensions built for AliExpress or Amazon order pages: any client vs. one marketplace, 138 currencies, and no account." />
+  <meta property="og:image" content="https://invoice-templates-now.com/Landing_Screen_1.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Invoice Template vs. AliExpress/Amazon Invoice Extensions" />
+  <meta name="twitter:description" content="How a general-purpose invoice generator compares to marketplace-only invoice extensions built for AliExpress or Amazon order pages: any client vs. one marketplace, 138 currencies, and no account." />
+  <meta name="twitter:image" content="https://invoice-templates-now.com/Landing_Screen_1.png" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Invoice Template vs. AliExpress/Amazon Invoice Extensions",
+    "description": "A comparison between a general-purpose Chrome invoice generator and marketplace-specific invoice extensions built to scrape AliExpress or Amazon order pages, covering which purchases they can invoice, currency support, and account requirements.",
+    "author": {
+      "@type": "Organization",
+      "name": "Invoice Template"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Invoice Template",
+      "url": "https://invoice-templates-now.com/"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://invoice-templates-now.com/invoice-template-vs-aliexpress-invoice-tools.html"
+    },
+    "url": "https://invoice-templates-now.com/invoice-template-vs-aliexpress-invoice-tools.html",
+    "datePublished": "2026-10-10",
+    "dateModified": "2026-10-10"
+  }
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5SCC5B6W');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Umami tracking -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="3336e8e1-6086-4ff0-8569-bbe15fb8da19"></script>
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/shared/base.css" />
+  <style>
+    @media (min-width: 769px) {
+      .hero{
+        padding: 60px 0 80px;
+      }
+    }
+
+    .hero h1{
+      font-size: clamp(32px, 5vw, 52px);
+      line-height:1.15;
+      color:#fff;
+      text-wrap: balance;
+    }
+
+    .hero p{
+      font-size: clamp(18px, 2.5vw, 22px);
+      max-width: 700px;
+    }
+
+    .cta-button{
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      color: white;
+      text-decoration: none;
+      padding: 16px 32px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 18px;
+      box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+      transition: all 0.2s ease;
+    }
+
+    .cta-button:hover{
+      transform: translateY(-2px);
+      box-shadow: 0 12px 35px rgba(59, 130, 246, 0.4);
+    }
+
+    @media (min-width: 769px) {
+      .features{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+    }
+
+    .features{
+      gap: 24px;
+      margin: 80px 0;
+    }
+
+    .feature-card{
+      padding: 32px;
+    }
+
+    .feature-icon{
+      width: 64px;
+      height: 64px;
+      background: #0f2a44;
+      border: 1px solid #12314e;
+      border-radius: 50%;
+      color: #7ceba3;
+      font-size: 24px;
+    }
+
+    .nav{
+      justify-content: center;
+      margin: 40px 0;
+    }
+
+    .nav a{
+      margin: 0 20px;
+    }
+
+    .intro p, .faq p, .comparison-intro p{
+      color: var(--text-muted);
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    table.comparison-table{
+      min-width: 640px;
+    }
+
+    .check{ color:#7ceba3; }
+
+    section h2{
+      color: #fff;
+      font-size: clamp(24px, 3vw, 32px);
+      text-align: center;
+      margin: 0 0 16px;
+    }
+
+    .comparison-intro{
+      max-width: 780px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .use-cases{
+      margin: 60px 0;
+    }
+
+    .use-cases .feature-card{
+      text-align: left;
+    }
+
+    .use-cases .feature-card h3{
+      text-align: left;
+    }
+
+    .note{
+      max-width: 780px;
+      margin: 0 auto 60px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    footer{
+      color: var(--muted);
+      text-align:center;
+      font-size: 13px;
+      padding: 40px 16px;
+      border-top: 1px solid var(--card-border);
+      margin-top: 80px;
+    }
+
+    footer a{
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SCC5B6W"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <main class="wrap">
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/install.html">Install</a>
+      <a href="/invoice-generator-vs-spreadsheet.html">Vs. Spreadsheet</a>
+      <a href="/privacy-by-design.html">Privacy by Design</a>
+      <a href="/faq.html">FAQ</a>
+      <a href="/blog/">Blog</a>
+    </nav>
+
+    <section class="hero">
+      <h1>Invoice Template vs. AliExpress/Amazon Invoice Extensions</h1>
+      <p>Some Chrome invoice extensions only work on one marketplace's order pages — built to scrape AliExpress or Amazon Seller Central, not to invoice a client. Here's how that compares to a general-purpose invoice generator.</p>
+      <a href="https://chromewebstore.google.com/detail/invoice-template/jiephbmepjaibnflchgedmkhefidahhj" class="cta-button" target="_blank">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+        Install from Chrome Web Store
+      </a>
+    </section>
+
+    <section class="comparison-intro">
+      <h2>Two different kinds of "invoice extension"</h2>
+      <p>Several popular Chrome extensions marketed as invoice generators are actually marketplace scrapers: their permissions and content scripts only activate on AliExpress order-detail pages or Amazon Seller Central, because that's the only place they can read order data from. <a href="/">Invoice Template</a> is built the other way around — a standalone form you fill in yourself, so it isn't tied to any marketplace, any site, or any single source of order data.</p>
+    </section>
+
+    <div class="comparison-table-wrap">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Comparison point</th>
+            <th>Marketplace-only invoice extensions</th>
+            <th>Invoice Template (Chrome extension)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Which purchases it can invoice</td>
+            <td data-label="Marketplace-only invoice extensions">Extensions like Alichrome, AliBill, and Ali2Invoice only run on AliExpress order-detail pages — their permissions are scoped to AliExpress domains, so they can't generate an invoice for anything bought or billed elsewhere.</td>
+            <td data-label="Invoice Template (Chrome extension)"><span class="check">✓</span> Works for any client, for any business, on any invoice — not tied to where a purchase happened.</td>
+          </tr>
+          <tr>
+            <td>Currency support</td>
+            <td data-label="Marketplace-only invoice extensions">AI Invoice Generator for Amazon derives currency and VAT rate from a fixed table of 20 country codes, based on which Amazon marketplace you're signed into — you can't pick a currency it doesn't recognize.</td>
+            <td data-label="Invoice Template (Chrome extension)"><span class="check">✓</span> 138 currencies, selectable for any invoice regardless of where your client is.</td>
+          </tr>
+          <tr>
+            <td>Where it works</td>
+            <td data-label="Marketplace-only invoice extensions">Only on the specific marketplace order pages the extension is built for — it has no interface for creating an invoice anywhere else.</td>
+            <td data-label="Invoice Template (Chrome extension)"><span class="check">✓</span> Works on any page, any time, with no dependency on a specific website being open.</td>
+          </tr>
+          <tr>
+            <td>Account &amp; data handling</td>
+            <td data-label="Marketplace-only invoice extensions">Ali2Invoice includes an optional sign-in that syncs scraped order data — including buyer name, address, and phone pulled from the AliExpress order page — to its own cloud account when you use it.</td>
+            <td data-label="Invoice Template (Chrome extension)"><span class="check">✓</span> No account, no sign-in, no cloud sync. Invoices and client data stay in your browser's local storage.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <section class="use-cases">
+      <h2>Who this matters for</h2>
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-icon">🧾</div>
+          <h3>Freelancers and agencies</h3>
+          <p>If your clients don't pay you through AliExpress or Amazon, a marketplace-scraper extension simply has nothing to scrape. Invoice Template works the same way for every client, regardless of how they paid you.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3>Businesses billing in less common currencies</h3>
+          <p>A fixed, marketplace-derived currency table covers a short list of countries. With 138 currencies built in, you're not limited to what a specific marketplace happens to support.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Anyone who doesn't want order or client data leaving their device</h3>
+          <p>Optional account sync is a legitimate feature for some tools, but it means your data can end up on someone else's server. Invoice Template never asks for an account and never uploads anything.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Frequently asked questions</h2>
+
+      <h3>Can Invoice Template generate an invoice from an AliExpress or Amazon order?</h3>
+      <p>Invoice Template doesn't scrape order data from any marketplace — you fill in client, item, and payment details yourself. That makes it slower for a single AliExpress reorder than a purpose-built AliExpress scraper, but it works identically for every client and every purchase, not just ones made on a specific marketplace.</p>
+
+      <h3>Why do some invoice extensions only work on one website?</h3>
+      <p>Extensions built to auto-fill an invoice from a marketplace order need permission to read that marketplace's pages, so their Chrome permissions and content scripts are scoped to that one site. That's a reasonable design for a single-marketplace tool, but it means the extension can't be used for anything outside that marketplace.</p>
+
+      <h3>Does Invoice Template require signing in or creating an account?</h3>
+      <p>No. There's no sign-in and no account of any kind.</p>
+
+      <h3>How many currencies does Invoice Template support?</h3>
+      <p>138 currencies, selectable on every invoice regardless of your client's location.</p>
+    </section>
+  </main>
+
+  <footer>© 2025 Invoice Template - Professional Invoice Management · <a href="/">Home</a> · <a href="/blog/">Blog</a></footer>
+</body>
+</html>

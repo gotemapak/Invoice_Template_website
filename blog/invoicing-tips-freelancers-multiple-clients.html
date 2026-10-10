@@ -58,54 +58,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="/shared/base.css" />
   <style>
-    :root{
-      --brand:#0A1625;
-      --body:#0b1623;
-      --card-bg:#0f1d2e;
-      --card-bg-2:#0c1a29;
-      --card-border:#12263c;
-      --text-hero:#e6edf3;
-      --text-muted:#cfe0ef;
-      --muted:#9fb3c8;
-      --radius:18px;
-      --shadow:0 24px 60px rgba(0,0,0,.35), 0 3px 10px rgba(0,0,0,.25);
-    }
-
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: var(--body);
-      color:#dbe7f3;
-    }
-
-    .wrap{
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    .hero{
-      text-align: center;
-      padding: 60px 0 80px;
+    @media (min-width: 769px) {
+      .hero{
+        padding: 60px 0 80px;
+      }
     }
 
     .hero h1{
       font-size: clamp(32px, 5vw, 52px);
-      line-height:1.15; letter-spacing:-.02em;
-      margin:0 0 20px; font-weight: 800; color:#fff;
+      line-height:1.15;
+      color:#fff;
       text-wrap: balance;
     }
 
     .hero p{
       font-size: clamp(18px, 2.5vw, 22px);
-      color: var(--text-hero);
-      margin: 0 0 40px;
       max-width: 680px;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     .cta-button{
@@ -128,63 +98,13 @@
       box-shadow: 0 12px 35px rgba(59, 130, 246, 0.4);
     }
 
-    .features{
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 24px;
-      margin: 80px 0;
-    }
-
-    .feature-card{
-      background: linear-gradient(180deg, var(--card-bg), var(--card-bg-2));
-      border: 1px solid var(--card-border);
-      border-radius: var(--radius);
-      padding: 32px;
-      text-align: center;
-    }
-
-    .feature-icon{
-      width: 64px;
-      height: 64px;
-      background: #0f2a44;
-      border: 1px solid #12314e;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 20px;
-      color: #7ceba3;
-      font-size: 24px;
-    }
-
-    .feature-card h3{
-      font-size: 20px;
-      font-weight: 700;
-      margin: 0 0 12px;
-      color: #fff;
-    }
-
-    .feature-card p{
-      color: var(--text-muted);
-      line-height: 1.6;
-      margin: 0;
-    }
-
     .nav{
-      text-align: center;
+      justify-content: center;
       margin: 40px 0;
     }
 
     .nav a{
-      color: var(--text-muted);
-      text-decoration: none;
       margin: 0 20px;
-      font-weight: 500;
-      transition: color 0.2s ease;
-    }
-
-    .nav a:hover{
-      color: #fff;
     }
 
     .article{
@@ -222,16 +142,6 @@
 
     .article a{ color: #7ceba3; }
 
-    .callout{
-      background: linear-gradient(180deg, var(--card-bg), var(--card-bg-2));
-      border: 1px solid var(--card-border);
-      border-radius: var(--radius);
-      padding: 24px 28px;
-      margin: 32px 0;
-    }
-
-    .callout p{ margin: 0; }
-
     .byline{
       color: var(--muted);
       font-size: 14px;
@@ -264,6 +174,7 @@
       <a href="/">Home</a>
       <a href="/blog/">Blog</a>
       <a href="/invoice-generator-vs-spreadsheet.html">Vs. Spreadsheet</a>
+      <a href="/invoice-template-vs-aliexpress-invoice-tools.html">Vs. AliExpress Tools</a>
       <a href="/privacy-by-design.html">Privacy by Design</a>
       <a href="/faq.html">FAQ</a>
     </nav>

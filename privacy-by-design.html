@@ -68,54 +68,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="/shared/base.css" />
   <style>
-    :root{
-      --brand:#0A1625;
-      --body:#0b1623;
-      --card-bg:#0f1d2e;
-      --card-bg-2:#0c1a29;
-      --card-border:#12263c;
-      --text-hero:#e6edf3;
-      --text-muted:#cfe0ef;
-      --muted:#9fb3c8;
-      --radius:18px;
-      --shadow:0 24px 60px rgba(0,0,0,.35), 0 3px 10px rgba(0,0,0,.25);
-    }
-
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: var(--body);
-      color:#dbe7f3;
-    }
-
-    .wrap{
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    .hero{
-      text-align: center;
-      padding: 60px 0 80px;
+    @media (min-width: 769px) {
+      .hero{
+        padding: 60px 0 80px;
+      }
     }
 
     .hero h1{
       font-size: clamp(32px, 5vw, 52px);
-      line-height:1.15; letter-spacing:-.02em;
-      margin:0 0 20px; font-weight: 800; color:#fff;
+      line-height:1.15;
+      color:#fff;
       text-wrap: balance;
     }
 
     .hero p{
       font-size: clamp(18px, 2.5vw, 22px);
-      color: var(--text-hero);
-      margin: 0 0 40px;
       max-width: 680px;
-      margin-left: auto;
-      margin-right: auto;
     }
 
     .cta-button{
@@ -138,19 +108,19 @@
       box-shadow: 0 12px 35px rgba(59, 130, 246, 0.4);
     }
 
+    @media (min-width: 769px) {
+      .features{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+    }
+
     .features{
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 24px;
       margin: 80px 0;
     }
 
     .feature-card{
-      background: linear-gradient(180deg, var(--card-bg), var(--card-bg-2));
-      border: 1px solid var(--card-border);
-      border-radius: var(--radius);
       padding: 32px;
-      text-align: center;
     }
 
     .feature-icon{
@@ -159,42 +129,17 @@
       background: #0f2a44;
       border: 1px solid #12314e;
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 20px;
       color: #7ceba3;
       font-size: 24px;
     }
 
-    .feature-card h3{
-      font-size: 20px;
-      font-weight: 700;
-      margin: 0 0 12px;
-      color: #fff;
-    }
-
-    .feature-card p{
-      color: var(--text-muted);
-      line-height: 1.6;
-      margin: 0;
-    }
-
     .nav{
-      text-align: center;
+      justify-content: center;
       margin: 40px 0;
     }
 
     .nav a{
-      color: var(--text-muted);
-      text-decoration: none;
       margin: 0 20px;
-      font-weight: 500;
-      transition: color 0.2s ease;
-    }
-
-    .nav a:hover{
-      color: #fff;
     }
 
     .intro p, .faq p, .comparison-intro p{
@@ -203,46 +148,8 @@
       font-size: 17px;
     }
 
-    .comparison-table-wrap{
-      overflow-x: auto;
-      margin: 40px 0 80px;
-      border-radius: var(--radius);
-      border: 1px solid var(--card-border);
-    }
-
     table.comparison-table{
-      width: 100%;
-      border-collapse: collapse;
       min-width: 640px;
-      background: linear-gradient(180deg, var(--card-bg), var(--card-bg-2));
-    }
-
-    table.comparison-table th,
-    table.comparison-table td{
-      padding: 18px 20px;
-      text-align: left;
-      border-bottom: 1px solid var(--card-border);
-      color: var(--text-muted);
-      line-height: 1.5;
-    }
-
-    table.comparison-table th{
-      color: #fff;
-      font-weight: 700;
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: .04em;
-      background: #0c1a29;
-    }
-
-    table.comparison-table tr:last-child td{
-      border-bottom: none;
-    }
-
-    table.comparison-table td:first-child{
-      color: #fff;
-      font-weight: 600;
-      white-space: nowrap;
     }
 
     .check{ color:#7ceba3; }
@@ -311,6 +218,7 @@
       <a href="/">Home</a>
       <a href="/install.html">Install</a>
       <a href="/invoice-generator-vs-spreadsheet.html">Vs. Spreadsheet</a>
+      <a href="/invoice-template-vs-aliexpress-invoice-tools.html">Vs. AliExpress Tools</a>
       <a href="/faq.html">FAQ</a>
       <a href="/blog/">Blog</a>
     </nav>
@@ -343,33 +251,33 @@
         <tbody>
           <tr>
             <td>Where invoices are saved</td>
-            <td>Uploaded to the provider's servers, tied to your account.</td>
-            <td><span class="check">✓</span> Saved locally on your device using the browser's built-in storage. Nothing is uploaded.</td>
+            <td data-label="Typical cloud-based invoicing tool">Uploaded to the provider's servers, tied to your account.</td>
+            <td data-label="Invoice Template (Chrome extension)"><span class="check">✓</span> Saved locally on your device using the browser's built-in storage. Nothing is uploaded.</td>
           </tr>
           <tr>
             <td>Client records</td>
-            <td>Stored in the provider's cloud database alongside other customers' data.</td>
-            <td><span class="check">✓</span> Stored on-device only. No shared server, no third-party database.</td>
+            <td data-label="Typical cloud-based invoicing tool">Stored in the provider's cloud database alongside other customers' data.</td>
+            <td data-label="Invoice Template (Chrome extension)"><span class="check">✓</span> Stored on-device only. No shared server, no third-party database.</td>
           </tr>
           <tr>
             <td>Account required</td>
-            <td>Usually yes — email, password, and often billing details just to start.</td>
-            <td><span class="check">✓</span> No account, no login, no password to manage or lose.</td>
+            <td data-label="Typical cloud-based invoicing tool">Usually yes — email, password, and often billing details just to start.</td>
+            <td data-label="Invoice Template (Chrome extension)"><span class="check">✓</span> No account, no login, no password to manage or lose.</td>
           </tr>
           <tr>
             <td>Exposure if the provider is breached</td>
-            <td>Your invoice and client data could be exposed along with everyone else's, since it lives on their servers.</td>
-            <td><span class="check">✓</span> Nothing to breach on a server, because nothing is sent to one.</td>
+            <td data-label="Typical cloud-based invoicing tool">Your invoice and client data could be exposed along with everyone else's, since it lives on their servers.</td>
+            <td data-label="Invoice Template (Chrome extension)"><span class="check">✓</span> Nothing to breach on a server, because nothing is sent to one.</td>
           </tr>
           <tr>
             <td>Works without an internet connection</td>
-            <td>Usually no — most cloud tools need a live connection to load or save your data.</td>
-            <td><span class="check">✓</span> Works completely offline. Create and export invoices with no connection at all.</td>
+            <td data-label="Typical cloud-based invoicing tool">Usually no — most cloud tools need a live connection to load or save your data.</td>
+            <td data-label="Invoice Template (Chrome extension)"><span class="check">✓</span> Works completely offline. Create and export invoices with no connection at all.</td>
           </tr>
           <tr>
             <td>What you need to set up</td>
-            <td>Account creation, email verification, often a subscription plan.</td>
-            <td><span class="check">✓</span> Install from the Chrome Web Store and start — no sign-up.</td>
+            <td data-label="Typical cloud-based invoicing tool">Account creation, email verification, often a subscription plan.</td>
+            <td data-label="Invoice Template (Chrome extension)"><span class="check">✓</span> Install from the Chrome Web Store and start — no sign-up.</td>
           </tr>
         </tbody>
       </table>
