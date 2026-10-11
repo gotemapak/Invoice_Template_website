@@ -148,8 +148,11 @@
       font-size: 17px;
     }
 
-    table.comparison-table{
-      min-width: 640px;
+    /* Desktop/tablet only: below 769px shared base.css turns the table into stacked cards */
+    @media (min-width: 769px) {
+      table.comparison-table{
+        min-width: 640px;
+      }
     }
 
     .check{ color:#7ceba3; }
@@ -326,6 +329,6 @@
     </section>
   </main>
 
-  <footer>© 2025 Invoice Template - Professional Invoice Management · <a href="/">Home</a> · <a href="/blog/">Blog</a></footer>
+  <footer>© 2026 Invoice Template - Professional Invoice Management · <a href="/">Home</a> · <a href="/blog/">Blog</a></footer>
 </body>
 </html>
